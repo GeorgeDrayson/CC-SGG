@@ -1,0 +1,2658 @@
+{
+	"3533": {
+		"ego": {
+			"location": [
+				264,
+				199,
+				0
+			],
+			"name": "Nissan Micra",
+			"lane_id": -1,
+			"road_id": 12,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				-1,
+				0,
+				0
+			],
+			"rotation": [
+				-1,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+            "52": {
+				"location": [
+					323,
+					202,
+					0
+				],
+				"name": "Traffic Light",
+				"lane_id": -1,
+				"road_id": 12,
+				"lane_name": "Outgoing lane",
+				"state": "Green"
+			}
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 12,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 12,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"3534": {
+		"ego": {
+			"location": [
+				263,
+				199,
+				0
+			],
+			"name": "Nissan Micra",
+			"lane_id": -1,
+			"road_id": 12,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				-1,
+				0,
+				0
+			],
+			"rotation": [
+				-1,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+            "52": {
+				"location": [
+					323,
+					202,
+					0
+				],
+				"name": "Traffic Light",
+				"lane_id": -1,
+				"road_id": 12,
+				"lane_name": "Outgoing lane",
+				"state": "Green"
+			}
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 12,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 12,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"3557": {
+		"ego": {
+			"location": [
+				263,
+				199,
+				0
+			],
+			"name": "Nissan Micra",
+			"lane_id": -1,
+			"road_id": 12,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				0,
+				0,
+				0
+			],
+			"rotation": [
+				-1,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+            "52": {
+				"location": [
+					323,
+					202,
+					0
+				],
+				"name": "Traffic Light",
+				"lane_id": -1,
+				"road_id": 12,
+				"lane_name": "Outgoing lane",
+				"state": "Yellow"
+			}
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 12,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 12,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"3580": {
+		"ego": {
+			"location": [
+				264,
+				199,
+				0
+			],
+			"name": "Nissan Micra",
+			"lane_id": -1,
+			"road_id": 12,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				1,
+				0,
+				0
+			],
+			"rotation": [
+				-1,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+            "52": {
+				"location": [
+					323,
+					202,
+					0
+				],
+				"name": "Traffic Light",
+				"lane_id": -1,
+				"road_id": 12,
+				"lane_name": "Outgoing lane",
+				"state": "Yellow"
+			}
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 12,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 12,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"3603": {
+		"ego": {
+			"location": [
+				265,
+				198,
+				0
+			],
+			"name": "Nissan Micra",
+			"lane_id": -1,
+			"road_id": 12,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				3,
+				0,
+				0
+			],
+			"rotation": [
+				-1,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+            "52": {
+				"location": [
+					323,
+					202,
+					0
+				],
+				"name": "Traffic Light",
+				"lane_id": -1,
+				"road_id": 12,
+				"lane_name": "Outgoing lane",
+				"state": "Red"
+			}
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 12,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 12,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"3627": {
+		"ego": {
+			"location": [
+				267,
+				198,
+				0
+			],
+			"name": "Nissan Micra",
+			"lane_id": -1,
+			"road_id": 12,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				4,
+				0,
+				0
+			],
+			"rotation": [
+				-1,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+            "52": {
+				"location": [
+					323,
+					202,
+					0
+				],
+				"name": "Traffic Light",
+				"lane_id": -1,
+				"road_id": 12,
+				"lane_name": "Outgoing lane",
+				"state": "Red"
+			}
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 12,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 12,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"3651": {
+		"ego": {
+			"location": [
+				270,
+				198,
+				0
+			],
+			"name": "Nissan Micra",
+			"lane_id": -1,
+			"road_id": 12,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				6,
+				0,
+				0
+			],
+			"rotation": [
+				-1,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+            "52": {
+				"location": [
+					323,
+					202,
+					0
+				],
+				"name": "Traffic Light",
+				"lane_id": -1,
+				"road_id": 12,
+				"lane_name": "Outgoing lane",
+				"state": "Red"
+			}
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 12,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 12,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"3673": {
+		"ego": {
+			"location": [
+				274,
+				198,
+				0
+			],
+			"name": "Nissan Micra",
+			"lane_id": -1,
+			"road_id": 12,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				9,
+				0,
+				0
+			],
+			"rotation": [
+				-1,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+            "52": {
+				"location": [
+					323,
+					202,
+					0
+				],
+				"name": "Traffic Light",
+				"lane_id": -1,
+				"road_id": 12,
+				"lane_name": "Outgoing lane",
+				"state": "Red"
+			}
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 12,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 12,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"3697": {
+		"ego": {
+			"location": [
+				279,
+				198,
+				0
+			],
+			"name": "Nissan Micra",
+			"lane_id": -1,
+			"road_id": 12,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				10,
+				0,
+				0
+			],
+			"rotation": [
+				-1,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+			"52": {
+				"location": [
+					323,
+					202,
+					0
+				],
+				"name": "Traffic Light",
+				"lane_id": -1,
+				"road_id": 12,
+				"lane_name": "Outgoing lane",
+				"state": "Red"
+			}
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 12,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 12,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"3721": {
+		"ego": {
+			"location": [
+				285,
+				198,
+				0
+			],
+			"name": "Nissan Micra",
+			"lane_id": -1,
+			"road_id": 12,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				12,
+				0,
+				0
+			],
+			"rotation": [
+				-1,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+			"52": {
+				"location": [
+					323,
+					202,
+					0
+				],
+				"name": "Traffic Light",
+				"lane_id": -1,
+				"road_id": 12,
+				"lane_name": "Outgoing lane",
+				"state": "Red"
+			}
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 12,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 12,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"3745": {
+		"ego": {
+			"location": [
+				292,
+				198,
+				0
+			],
+			"name": "Nissan Micra",
+			"lane_id": -1,
+			"road_id": 12,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				14,
+				0,
+				0
+			],
+			"rotation": [
+				-1,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+			"52": {
+				"location": [
+					323,
+					202,
+					0
+				],
+				"name": "Traffic Light",
+				"lane_id": -1,
+				"road_id": 12,
+				"lane_name": "Outgoing lane",
+				"state": "Red"
+			}
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 12,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 12,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"3770": {
+		"ego": {
+			"location": [
+				300,
+				198,
+				0
+			],
+			"name": "Nissan Micra",
+			"lane_id": -1,
+			"road_id": 12,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				14,
+				0,
+				0
+			],
+			"rotation": [
+				2,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+			"52": {
+				"location": [
+					323,
+					202,
+					0
+				],
+				"name": "Traffic Light",
+				"lane_id": -1,
+				"road_id": 12,
+				"lane_name": "Outgoing lane",
+				"state": "Red"
+			}
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 12,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 12,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"3794": {
+		"ego": {
+			"location": [
+				307,
+				198,
+				0
+			],
+			"name": "Nissan Micra",
+			"lane_id": -1,
+			"road_id": 12,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				14,
+				0,
+				0
+			],
+			"rotation": [
+				2,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+			"52": {
+				"location": [
+					323,
+					202,
+					0
+				],
+				"name": "Traffic Light",
+				"lane_id": -1,
+				"road_id": 12,
+				"lane_name": "Outgoing lane",
+				"state": "Red"
+			}
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 12,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 12,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"3819": {
+		"ego": {
+			"location": [
+				315,
+				198,
+				0
+			],
+			"name": "Nissan Micra",
+			"lane_id": -1,
+			"road_id": 12,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				13,
+				0,
+				0
+			],
+			"rotation": [
+				1,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+			"52": {
+				"location": [
+					323,
+					202,
+					0
+				],
+				"name": "Traffic Light",
+				"lane_id": -1,
+				"road_id": 12,
+				"lane_name": "Outgoing lane",
+				"state": "Red"
+			}
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 12,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 12,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"3844": {
+		"ego": {
+			"location": [
+				321,
+				199,
+				0
+			],
+			"name": "Nissan Micra",
+			"lane_id": -1,
+			"road_id": 12,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				11,
+				0,
+				0
+			],
+			"rotation": [
+				1,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+			"52": {
+				"location": [
+					323,
+					202,
+					0
+				],
+				"name": "Traffic Light",
+				"lane_id": -1,
+				"road_id": 12,
+				"lane_name": "Outgoing lane",
+				"state": "Red"
+			}
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 12,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 12,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 12,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"3868": {
+		"ego": {
+			"location": [
+				327,
+				199,
+				0
+			],
+			"name": "Nissan Micra",
+			"lane_id": -1,
+			"road_id": 201,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				9,
+				1,
+				0
+			],
+			"rotation": [
+				5,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 201,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "NONE",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": true
+					}
+				]
+			}
+		]
+	},
+	"3894": {
+		"ego": {
+			"location": [
+				330,
+				200,
+				0
+			],
+			"name": "Nissan Micra",
+			"lane_id": -1,
+			"road_id": 201,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				4,
+				2,
+				0
+			],
+			"rotation": [
+				23,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 201,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "NONE",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": true
+					}
+				]
+			}
+		]
+	},
+	"3919": {
+		"ego": {
+			"location": [
+				331,
+				201,
+				0
+			],
+			"name": "Nissan Micra",
+			"lane_id": 2,
+			"road_id": 197,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				1,
+				2,
+				0
+			],
+			"rotation": [
+				43,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": 1,
+						"road_id": 197,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": true
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 197,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": true
+					}
+				]
+			}
+		]
+	},
+	"3945": {
+		"ego": {
+			"location": [
+				332,
+				202,
+				0
+			],
+			"name": "Nissan Micra",
+			"lane_id": 2,
+			"road_id": 197,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				2,
+				2,
+				0
+			],
+			"rotation": [
+				47,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": 1,
+						"road_id": 197,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": true
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 197,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": true
+					}
+				]
+			}
+		]
+	},
+	"3970": {
+		"ego": {
+			"location": [
+				333,
+				204,
+				0
+			],
+			"name": "Nissan Micra",
+			"lane_id": -1,
+			"road_id": 201,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				1,
+				5,
+				0
+			],
+			"rotation": [
+				63,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 201,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "NONE",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": true
+					}
+				]
+			}
+		]
+	},
+	"3996": {
+		"ego": {
+			"location": [
+				334,
+				208,
+				0
+			],
+			"name": "Nissan Micra",
+			"lane_id": -1,
+			"road_id": 218,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				1,
+				7,
+				0
+			],
+			"rotation": [
+				76,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 218,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": true
+					}
+				]
+			}
+		]
+	},
+	"4021": {
+		"ego": {
+			"location": [
+				335,
+				212,
+				0
+			],
+			"name": "Nissan Micra",
+			"lane_id": -1,
+			"road_id": 19,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				0,
+				8,
+				0
+			],
+			"rotation": [
+				83,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 19,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 19,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 19,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 19,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 19,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 19,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"4046": {
+		"ego": {
+			"location": [
+				335,
+				216,
+				0
+			],
+			"name": "Nissan Micra",
+			"lane_id": -1,
+			"road_id": 19,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				0,
+				6,
+				0
+			],
+			"rotation": [
+				83,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 19,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 19,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 19,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 19,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 19,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 19,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	}
+}

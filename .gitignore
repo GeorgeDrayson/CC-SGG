@@ -1,0 +1,14 @@
+4yp
+__pycache__
+semantic_files
+scene_graph_images
+scene_graph_files
+draft_scenarios
+new_images
+wandb
+checkpoints
+new_dataset
+sg_config_new_rep.yaml
+edge_extractor_new_rep.py
+one_scenario
+predict_dataset

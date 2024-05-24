@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSCENARIO>
+  <FileHeader revMajor="1" revMinor="0" date="2020-02-21T10:00:00" description="Vehicle Catalog" author="George"/>
+	<Catalog name="VehicleCatalog">
+		<Vehicle name="vehicle.tesla.model3_ego" vehicleCategory="car">
+			<ParameterDeclarations>
+				<ParameterDeclaration name = "$color1" parameterType="double" value = "0"/>
+				<ParameterDeclaration name = "$color2" parameterType="double" value = "0"/>
+				<ParameterDeclaration name = "$color3" parameterType="double" value = "0"/>
+			</ParameterDeclarations>
+			<Performance maxSpeed="69.444" maxAcceleration="200" maxDeceleration="10.0"/>
+			<BoundingBox>
+				<Center x="1.5" y="0.0" z="0.9"/>
+				<Dimensions width="2.1" length="4.5" height="1.8"/>
+			</BoundingBox>
+			<Axles>
+				<FrontAxle maxSteering="0.5" wheelDiameter="0.6" trackWidth="1.8" positionX="3.1" positionZ="0.3"/>
+				<RearAxle maxSteering="0.0" wheelDiameter="0.6" trackWidth="1.8" positionX="0.0" positionZ="0.3"/>
+			</Axles>
+			<Properties>
+				<Property name="type" value="ego_vehicle"/>
+				<Property name="color" value="$color1,$color2,$color3"/>
+			</Properties>
+		</Vehicle>
+	</Catalog>
+</OpenSCENARIO>

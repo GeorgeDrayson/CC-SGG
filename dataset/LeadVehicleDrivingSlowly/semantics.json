@@ -1,0 +1,3663 @@
+{
+	"186983": {
+		"ego": {
+			"location": [
+				101,
+				133,
+				0
+			],
+			"name": "Tesla Model3",
+			"lane_id": -1,
+			"road_id": 4,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				1,
+				0,
+				0
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+			"274": {
+				"location": [
+					121,
+					133,
+					0
+				],
+				"name": "Tesla Model3",
+				"lane_id": -1,
+				"road_id": 4,
+				"lane_name": "Outgoing lane",
+				"velocity": [
+					0,
+					0,
+					0
+				],
+				"rotation": [
+					0,
+					0,
+					0
+				],
+				"brake_light_on": true
+			}
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"186985": {
+		"ego": {
+			"location": [
+				103,
+				133,
+				0
+			],
+			"name": "Tesla Model3",
+			"lane_id": -1,
+			"road_id": 4,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				3,
+				0,
+				0
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+			"274": {
+				"location": [
+					121,
+					133,
+					0
+				],
+				"name": "Tesla Model3",
+				"lane_id": -1,
+				"road_id": 4,
+				"lane_name": "Outgoing lane",
+				"velocity": [
+					0,
+					0,
+					0
+				],
+				"rotation": [
+					0,
+					0,
+					0
+				],
+				"brake_light_on": false
+			}
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"187006": {
+		"ego": {
+			"location": [
+				104,
+				133,
+				0
+			],
+			"name": "Tesla Model3",
+			"lane_id": -1,
+			"road_id": 4,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				1,
+				0,
+				0
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"brake_light_on": true
+		},
+		"actors": {
+			"274": {
+				"location": [
+					122,
+					133,
+					0
+				],
+				"name": "Tesla Model3",
+				"lane_id": -1,
+				"road_id": 4,
+				"lane_name": "Outgoing lane",
+				"velocity": [
+					3,
+					0,
+					0
+				],
+				"rotation": [
+					0,
+					0,
+					0
+				],
+				"brake_light_on": false
+			}
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"187026": {
+		"ego": {
+			"location": [
+				104,
+				133,
+				0
+			],
+			"name": "Tesla Model3",
+			"lane_id": -1,
+			"road_id": 4,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				0,
+				0,
+				0
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+			"274": {
+				"location": [
+					124,
+					133,
+					0
+				],
+				"name": "Tesla Model3",
+				"lane_id": -1,
+				"road_id": 4,
+				"lane_name": "Outgoing lane",
+				"velocity": [
+					5,
+					0,
+					0
+				],
+				"rotation": [
+					0,
+					0,
+					0
+				],
+				"brake_light_on": false
+			}
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"187046": {
+		"ego": {
+			"location": [
+				104,
+				133,
+				0
+			],
+			"name": "Tesla Model3",
+			"lane_id": -1,
+			"road_id": 4,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				0,
+				0,
+				0
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+			"274": {
+				"location": [
+					127,
+					133,
+					0
+				],
+				"name": "Tesla Model3",
+				"lane_id": -1,
+				"road_id": 4,
+				"lane_name": "Outgoing lane",
+				"velocity": [
+					7,
+					0,
+					0
+				],
+				"rotation": [
+					0,
+					0,
+					0
+				],
+				"brake_light_on": false
+			}
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"187067": {
+		"ego": {
+			"location": [
+				105,
+				133,
+				0
+			],
+			"name": "Tesla Model3",
+			"lane_id": -1,
+			"road_id": 4,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				0,
+				0,
+				0
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+			"274": {
+				"location": [
+					132,
+					133,
+					0
+				],
+				"name": "Tesla Model3",
+				"lane_id": -1,
+				"road_id": 4,
+				"lane_name": "Outgoing lane",
+				"velocity": [
+					9,
+					0,
+					0
+				],
+				"rotation": [
+					0,
+					0,
+					0
+				],
+				"brake_light_on": false
+			}
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"187086": {
+		"ego": {
+			"location": [
+				105,
+				133,
+				0
+			],
+			"name": "Tesla Model3",
+			"lane_id": -1,
+			"road_id": 4,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				0,
+				0,
+				0
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+			"274": {
+				"location": [
+					137,
+					133,
+					0
+				],
+				"name": "Tesla Model3",
+				"lane_id": -1,
+				"road_id": 4,
+				"lane_name": "Outgoing lane",
+				"velocity": [
+					9,
+					0,
+					0
+				],
+				"rotation": [
+					0,
+					0,
+					0
+				],
+				"brake_light_on": false
+			}
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"187107": {
+		"ego": {
+			"location": [
+				105,
+				133,
+				0
+			],
+			"name": "Tesla Model3",
+			"lane_id": -1,
+			"road_id": 4,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				0,
+				0,
+				0
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+			"274": {
+				"location": [
+					141,
+					133,
+					0
+				],
+				"name": "Tesla Model3",
+				"lane_id": -1,
+				"road_id": 4,
+				"lane_name": "Outgoing lane",
+				"velocity": [
+					9,
+					0,
+					0
+				],
+				"rotation": [
+					0,
+					0,
+					0
+				],
+				"brake_light_on": false
+			}
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"187126": {
+		"ego": {
+			"location": [
+				105,
+				133,
+				0
+			],
+			"name": "Tesla Model3",
+			"lane_id": -1,
+			"road_id": 4,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				3,
+				0,
+				0
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+			"274": {
+				"location": [
+					147,
+					133,
+					0
+				],
+				"name": "Tesla Model3",
+				"lane_id": -1,
+				"road_id": 4,
+				"lane_name": "Outgoing lane",
+				"velocity": [
+					9,
+					0,
+					0
+				],
+				"rotation": [
+					0,
+					0,
+					0
+				],
+				"brake_light_on": false
+			}
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"187147": {
+		"ego": {
+			"location": [
+				108,
+				133,
+				0
+			],
+			"name": "Tesla Model3",
+			"lane_id": -1,
+			"road_id": 4,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				6,
+				0,
+				0
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+			"274": {
+				"location": [
+					152,
+					133,
+					0
+				],
+				"name": "Tesla Model3",
+				"lane_id": -1,
+				"road_id": 4,
+				"lane_name": "Outgoing lane",
+				"velocity": [
+					9,
+					0,
+					0
+				],
+				"rotation": [
+					0,
+					0,
+					0
+				],
+				"brake_light_on": false
+			}
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"187167": {
+		"ego": {
+			"location": [
+				112,
+				133,
+				0
+			],
+			"name": "Tesla Model3",
+			"lane_id": -1,
+			"road_id": 4,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				10,
+				0,
+				0
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+			"274": {
+				"location": [
+					157,
+					133,
+					0
+				],
+				"name": "Tesla Model3",
+				"lane_id": -1,
+				"road_id": 4,
+				"lane_name": "Outgoing lane",
+				"velocity": [
+					9,
+					0,
+					0
+				],
+				"rotation": [
+					0,
+					0,
+					0
+				],
+				"brake_light_on": false
+			}
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"187187": {
+		"ego": {
+			"location": [
+				119,
+				133,
+				0
+			],
+			"name": "Tesla Model3",
+			"lane_id": -1,
+			"road_id": 4,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				13,
+				0,
+				0
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+			"274": {
+				"location": [
+					162,
+					133,
+					0
+				],
+				"name": "Tesla Model3",
+				"lane_id": -1,
+				"road_id": 4,
+				"lane_name": "Outgoing lane",
+				"velocity": [
+					9,
+					0,
+					0
+				],
+				"rotation": [
+					0,
+					0,
+					0
+				],
+				"brake_light_on": false
+			}
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"187208": {
+		"ego": {
+			"location": [
+				126,
+				133,
+				0
+			],
+			"name": "Tesla Model3",
+			"lane_id": -1,
+			"road_id": 4,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				15,
+				0,
+				0
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+			"274": {
+				"location": [
+					167,
+					133,
+					0
+				],
+				"name": "Tesla Model3",
+				"lane_id": -1,
+				"road_id": 4,
+				"lane_name": "Outgoing lane",
+				"velocity": [
+					9,
+					0,
+					0
+				],
+				"rotation": [
+					0,
+					0,
+					0
+				],
+				"brake_light_on": false
+			}
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"187229": {
+		"ego": {
+			"location": [
+				134,
+				133,
+				0
+			],
+			"name": "Tesla Model3",
+			"lane_id": -1,
+			"road_id": 4,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				16,
+				0,
+				0
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+			"274": {
+				"location": [
+					172,
+					133,
+					0
+				],
+				"name": "Tesla Model3",
+				"lane_id": -1,
+				"road_id": 4,
+				"lane_name": "Outgoing lane",
+				"velocity": [
+					9,
+					0,
+					0
+				],
+				"rotation": [
+					0,
+					0,
+					0
+				],
+				"brake_light_on": false
+			}
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"187249": {
+		"ego": {
+			"location": [
+				142,
+				133,
+				0
+			],
+			"name": "Tesla Model3",
+			"lane_id": -1,
+			"road_id": 4,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				15,
+				0,
+				0
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+			"274": {
+				"location": [
+					177,
+					133,
+					0
+				],
+				"name": "Tesla Model3",
+				"lane_id": -1,
+				"road_id": 4,
+				"lane_name": "Outgoing lane",
+				"velocity": [
+					9,
+					0,
+					0
+				],
+				"rotation": [
+					0,
+					0,
+					0
+				],
+				"brake_light_on": false
+			}
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"187271": {
+		"ego": {
+			"location": [
+				151,
+				133,
+				0
+			],
+			"name": "Tesla Model3",
+			"lane_id": -1,
+			"road_id": 4,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				18,
+				0,
+				0
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+			"274": {
+				"location": [
+					182,
+					133,
+					0
+				],
+				"name": "Tesla Model3",
+				"lane_id": -1,
+				"road_id": 4,
+				"lane_name": "Outgoing lane",
+				"velocity": [
+					9,
+					0,
+					0
+				],
+				"rotation": [
+					0,
+					0,
+					0
+				],
+				"brake_light_on": false
+			}
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"187293": {
+		"ego": {
+			"location": [
+				160,
+				133,
+				0
+			],
+			"name": "Tesla Model3",
+			"lane_id": -1,
+			"road_id": 4,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				19,
+				0,
+				0
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+			"274": {
+				"location": [
+					187,
+					133,
+					0
+				],
+				"name": "Tesla Model3",
+				"lane_id": -1,
+				"road_id": 4,
+				"lane_name": "Outgoing lane",
+				"velocity": [
+					9,
+					0,
+					0
+				],
+				"rotation": [
+					0,
+					0,
+					0
+				],
+				"brake_light_on": false
+			}
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"187316": {
+		"ego": {
+			"location": [
+				170,
+				133,
+				0
+			],
+			"name": "Tesla Model3",
+			"lane_id": -1,
+			"road_id": 4,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				19,
+				0,
+				0
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+			"274": {
+				"location": [
+					192,
+					133,
+					0
+				],
+				"name": "Tesla Model3",
+				"lane_id": -1,
+				"road_id": 4,
+				"lane_name": "Outgoing lane",
+				"velocity": [
+					9,
+					0,
+					0
+				],
+				"rotation": [
+					0,
+					0,
+					0
+				],
+				"brake_light_on": false
+			}
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"187338": {
+		"ego": {
+			"location": [
+				180,
+				133,
+				0
+			],
+			"name": "Tesla Model3",
+			"lane_id": -1,
+			"road_id": 4,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				19,
+				0,
+				0
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+			"274": {
+				"location": [
+					197,
+					133,
+					0
+				],
+				"name": "Tesla Model3",
+				"lane_id": -1,
+				"road_id": 4,
+				"lane_name": "Outgoing lane",
+				"velocity": [
+					9,
+					0,
+					0
+				],
+				"rotation": [
+					0,
+					0,
+					0
+				],
+				"brake_light_on": false
+			}
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"187362": {
+		"ego": {
+			"location": [
+				190,
+				133,
+				0
+			],
+			"name": "Tesla Model3",
+			"lane_id": -1,
+			"road_id": 4,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				21,
+				0,
+				0
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+			"274": {
+				"location": [
+					202,
+					133,
+					0
+				],
+				"name": "Tesla Model3",
+				"lane_id": -1,
+				"road_id": 4,
+				"lane_name": "Outgoing lane",
+				"velocity": [
+					9,
+					0,
+					0
+				],
+				"rotation": [
+					0,
+					0,
+					0
+				],
+				"brake_light_on": false
+			}
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"187386": {
+		"ego": {
+			"location": [
+				202,
+				133,
+				0
+			],
+			"name": "Tesla Model3",
+			"lane_id": -1,
+			"road_id": 4,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				22,
+				0,
+				0
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+			"274": {
+				"location": [
+					207,
+					133,
+					0
+				],
+				"name": "Tesla Model3",
+				"lane_id": -1,
+				"road_id": 4,
+				"lane_name": "Outgoing lane",
+				"velocity": [
+					9,
+					0,
+					0
+				],
+				"rotation": [
+					0,
+					0,
+					0
+				],
+				"brake_light_on": false
+			}
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"187410": {
+		"ego": {
+			"location": [
+				210,
+				133,
+				0
+			],
+			"name": "Tesla Model3",
+			"lane_id": -1,
+			"road_id": 4,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				15,
+				0,
+				0
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+			"274": {
+				"location": [
+					215,
+					133,
+					0
+				],
+				"name": "Tesla Model3",
+				"lane_id": -1,
+				"road_id": 4,
+				"lane_name": "Outgoing lane",
+				"velocity": [
+					15,
+					0,
+					0
+				],
+				"rotation": [
+					0,
+					0,
+					0
+				],
+				"brake_light_on": true
+			}
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"187435": {
+		"ego": {
+			"location": [
+				217,
+				133,
+				0
+			],
+			"name": "Tesla Model3",
+			"lane_id": -1,
+			"road_id": 4,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				12,
+				0,
+				0
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+			"274": {
+				"location": [
+					222,
+					133,
+					0
+				],
+				"name": "Tesla Model3",
+				"lane_id": -1,
+				"road_id": 4,
+				"lane_name": "Outgoing lane",
+				"velocity": [
+					12,
+					0,
+					0
+				],
+				"rotation": [
+					0,
+					0,
+					0
+				],
+				"brake_light_on": true
+			}
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"187459": {
+		"ego": {
+			"location": [
+				223,
+				133,
+				0
+			],
+			"name": "Tesla Model3",
+			"lane_id": -1,
+			"road_id": 4,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				9,
+				0,
+				0
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+			"274": {
+				"location": [
+					228,
+					133,
+					0
+				],
+				"name": "Tesla Model3",
+				"lane_id": -1,
+				"road_id": 4,
+				"lane_name": "Outgoing lane",
+				"velocity": [
+					9,
+					0,
+					0
+				],
+				"rotation": [
+					0,
+					0,
+					0
+				],
+				"brake_light_on": false
+			}
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	},
+	"187484": {
+		"ego": {
+			"location": [
+				227,
+				133,
+				0
+			],
+			"name": "Tesla Model3",
+			"lane_id": -1,
+			"road_id": 4,
+			"lane_name": "Outgoing lane",
+			"velocity": [
+				7,
+				0,
+				0
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"brake_light_on": false
+		},
+		"actors": {
+			"274": {
+				"location": [
+					233,
+					133,
+					0
+				],
+				"name": "Tesla Model3",
+				"lane_id": -1,
+				"road_id": 4,
+				"lane_name": "Outgoing lane",
+				"velocity": [
+					9,
+					0,
+					0
+				],
+				"rotation": [
+					0,
+					0,
+					0
+				],
+				"brake_light_on": false
+			}
+		},
+		"pedestrians": {
+
+		},
+		"trafficlights": {
+			"49": {
+				"location": [
+					321,
+					136,
+					0
+				],
+				"name": "Traffic Light",
+				"lane_id": -1,
+				"road_id": 4,
+				"lane_name": "Outgoing lane",
+				"state": "Green"
+			}
+		},
+		"signs": {
+
+		},
+		"objects": {
+
+		},
+		"lanes": [
+			{
+				"Incoming lane pavement": [
+					{
+						"lane_id": 3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Incoming lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane shoulder": [
+					{
+						"lane_id": 2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Incoming lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Incoming lane": [
+					{
+						"lane_id": 1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Incoming lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane": [
+					{
+						"lane_id": -1,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Broken",
+						"category": "lane",
+						"name": "Outgoing lane",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane shoulder": [
+					{
+						"lane_id": -2,
+						"road_id": 4,
+						"right_lane_marking_type": "Curb",
+						"left_lane_marking_type": "NONE",
+						"category": "shoulder",
+						"name": "Outgoing lane shoulder",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			},
+			{
+				"Outgoing lane pavement": [
+					{
+						"lane_id": -3,
+						"road_id": 4,
+						"right_lane_marking_type": "NONE",
+						"left_lane_marking_type": "Curb",
+						"category": "pavement",
+						"name": "Outgoing lane pavement",
+						"lane_change": "NONE",
+						"is_junction": false
+					}
+				]
+			}
+		]
+	}
+}

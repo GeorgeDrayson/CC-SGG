@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSCENARIO>
+  <FileHeader revMajor="1" revMinor="0" date="2020-03-20T12:00:00" description="CARLA:FollowLeadingVehicle" author=""/>
+  <ParameterDeclarations>
+    <!-- Environment -->
+    <ParameterDeclaration name="environment" parameterType="string" value="Environment1"/>
+
+    <!-- Start position of ego vehicle -->
+    <ParameterDeclaration name="road" parameterType="integer" value="19"/>
+    <ParameterDeclaration name="lane" parameterType="integer" value="-1"/>
+    <ParameterDeclaration name="longitudinalDistance" parameterType="double" value="5.0"/>
+    <ParameterDeclaration name="offset" parameterType="double" value="0.0"/>
+
+    <!-- Start position of adversary -->
+    <ParameterDeclaration name="longitudinalOffset" parameterType="double" value="25.0"/>
+    <ParameterDeclaration name="lateralOffset" parameterType="double" value="4.0"/>
+
+    <!-- Maneuver Definitions -->
+    <ParameterDeclaration name="maneuverName" parameterType="string" value="Drive"/>   
+    <ParameterDeclaration name="leadingSpeed" parameterType="double" value="0.0"/>
+    <ParameterDeclaration name="drivingTime" parameterType="double" value="30.0"/>
+  </ParameterDeclarations>
+
+  <!-- Catalogs -->
+  <CatalogLocations>
+    <VehicleCatalog>
+      <Directory path="catalogs/vehicles"/>
+    </VehicleCatalog>
+    <EnvironmentCatalog>
+      <Directory path="catalogs/environments"/>
+    </EnvironmentCatalog>
+    <ManeuverCatalog>
+      <Directory path="catalogs/maneuvers"/>
+    </ManeuverCatalog>
+  </CatalogLocations>
+
+  <!-- TOWN NAME -->
+  <RoadNetwork>
+    <LogicFile filepath="Town01"/>
+    <SceneGraphFile filepath=""/>
+  </RoadNetwork>
+
+  <!-- VEHICLES -->
+  <Entities>
+    <ScenarioObject name="hero">
+      <CatalogReference catalogName="VehicleCatalog" entryName="vehicle.tesla.model3_ego">
+        <ParameterAssignments>
+          <ParameterAssignment parameterRef="color3" value="255"/>
+        </ParameterAssignments>
+      </CatalogReference>
+    </ScenarioObject>
+    
+    <ScenarioObject name="adversary">
+        <Pedestrian name="walker.pedestrian.0001" mass="90.0" model="walker.pedestrian.0001" pedestrianCategory="pedestrian">
+            <BoundingBox>
+                <Center x="1.5" y="0.0" z="0.9" />
+                <Dimensions width="2.1" length="4.5" height="1.8" />
+            </BoundingBox>
+            <Properties>
+                <Property name="rolename" value="adversary" />
+                <Property name="type" value="simulation" />
+            </Properties>
+        </Pedestrian>
+    </ScenarioObject>
+  </Entities>
+  <Storyboard>
+  
+    <!-- INITIAL CONDITIONS -->
+    <Init>
+      <Actions>
+      
+        <!-- ENVIRONMENT -->
+        <GlobalAction>
+          <EnvironmentAction>
+            <CatalogReference catalogName = "EnvironmentCatalog" entryName = "$environment"/>
+          </EnvironmentAction>
+        </GlobalAction>
+        
+        <!-- EGO VEHICLE INITIALISATION -->
+        <Private entityRef="hero">
+          <PrivateAction>
+            <!-- WHERE -->
+            <TeleportAction>
+              <Position>
+             <!--   <RoadPosition roadId="$road" s="$longitudinalDistance" t="$lateralOffset"/> --> 
+                <LanePosition roadId="4" laneId="-1" offset="0" s="0"/>
+              </Position>
+            </TeleportAction>
+          </PrivateAction>
+          <PrivateAction>
+          
+            <!-- CONTROLLER -->
+            <ControllerAction>
+              <AssignControllerAction>
+                <Controller name="HeroAgent">
+                  <Properties>
+                    <Property name="module" value="external_control"/>
+                  </Properties>
+                </Controller>
+              </AssignControllerAction>
+              <OverrideControllerValueAction>
+                <Throttle value="0" active="false"/>
+                <Brake value="0" active="false"/>
+                <Clutch value="0" active="false"/>
+                <ParkingBrake value="0" active="false"/>
+                <SteeringWheel value="0" active="false"/>
+                <Gear number="0" active="false"/>
+              </OverrideControllerValueAction>
+            </ControllerAction>
+          </PrivateAction>
+        </Private>
+        
+        <!-- ADVERSARY VEHICLE INITIALISATION -->
+        <Private entityRef="adversary">
+          <PrivateAction>
+            <TeleportAction>
+              <Position>
+                <WorldPosition x="200" y="137" z="0" h="180"/>
+              </Position>
+            </TeleportAction>
+          </PrivateAction>
+        </Private>
+      </Actions>
+    </Init>
+
+    <Story name="MyStory">
+      <Act name="Behavior">
+        <ManeuverGroup name="ManeuverSequence" maximumExecutionCount="1">
+          <!-- WHO -->
+          <Actors selectTriggeringEntities="false">
+            <EntityRef entityRef="adversary"/>
+          </Actors>
+          <Maneuver name="PedestrianCrossingManeuver">
+              <Event name="PedestrianStartsWalking" priority="overwrite">
+                  <Action name="PedestrianStartsWalking">
+                      <PrivateAction>
+                          <LongitudinalAction>
+                              <SpeedAction>
+                                  <SpeedActionDynamics dynamicsShape="step" value="10" dynamicsDimension="distance"/>
+                                  <SpeedActionTarget>
+                                      <AbsoluteTargetSpeed value="3.0" />
+                                  </SpeedActionTarget>
+                              </SpeedAction>
+                          </LongitudinalAction>
+                      </PrivateAction>
+                  </Action>
+                  <StartTrigger>
+                    <ConditionGroup>
+                      <Condition name="StartConditionPedestrian" delay="0" conditionEdge="rising">
+                        <ByEntityCondition>
+                          <TriggeringEntities triggeringEntitiesRule="any">
+                            <EntityRef entityRef="hero"/>
+                          </TriggeringEntities>
+                          <EntityCondition>
+    <!--                        <RelativeDistanceCondition entityRef="adversary" relativeDistanceType="cartesianDistance" value="40.0" freespace="false" rule="lessThan"/>-->
+                            <RelativeDistanceCondition entityRef="adversary" relativeDistanceType="longitudinal" value="50.0" freespace="true" rule="lessThan"/>
+                          </EntityCondition>
+                        </ByEntityCondition>
+                      </Condition>
+                    </ConditionGroup>
+                  </StartTrigger>
+                </Event>
+            </Maneuver>
+        </ManeuverGroup>
+        <!-- SCENARIO START CONDITION -->
+        <StartTrigger>
+          <ConditionGroup>
+            <Condition name="" delay="0" conditionEdge="rising">
+              <ByEntityCondition>
+                <TriggeringEntities triggeringEntitiesRule="any">
+                  <EntityRef entityRef="hero"/>
+                </TriggeringEntities>
+                <EntityCondition>
+                  <TraveledDistanceCondition value="1.0"/>
+                </EntityCondition>
+              </ByEntityCondition>
+            </Condition>
+          </ConditionGroup>
+        </StartTrigger>
+      </Act>
+    </Story>
+    <StopTrigger>
+      <ConditionGroup>
+        <Condition name="criteria_DrivenDistanceTest" delay="0" conditionEdge="rising">
+          <ByValueCondition>
+            <ParameterCondition parameterRef="distance_success" value="1000" rule="lessThan"/>
+          </ByValueCondition>
+        </Condition>
+      </ConditionGroup>
+    </StopTrigger>
+  </Storyboard>
+</OpenSCENARIO>

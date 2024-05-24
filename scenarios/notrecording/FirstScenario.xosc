@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSCENARIO>
+  <FileHeader revMajor="1" revMinor="0" date="2020-03-20T12:00:00" description="CARLA:FollowLeadingVehicle" author=""/>
+  <ParameterDeclarations>
+    <ParameterDeclaration name="leadingSpeed" parameterType="double" value="30.0"/>
+  </ParameterDeclarations>
+  <CatalogLocations>
+    <VehicleCatalog>
+      <Directory path="../catalogs/vehicles"/>
+    </VehicleCatalog>
+    <EnvironmentCatalog>
+      <Directory path="../catalogs/environments"/>
+    </EnvironmentCatalog>
+  </CatalogLocations>
+  <RoadNetwork>
+    <LogicFile filepath="Town01"/>
+    <SceneGraphFile filepath=""/>
+  </RoadNetwork>
+
+  <!-- VEHICLES -->
+  <Entities>
+    <ScenarioObject name="hero">
+      <CatalogReference catalogName="VehicleCatalog" entryName="vehicle.tesla.model3_ego">
+        <ParameterAssignments>
+          <ParameterAssignment parameterRef="color3" value="255"/>
+        </ParameterAssignments>
+      </CatalogReference>
+    </ScenarioObject>
+    
+    <ScenarioObject name="adversary">
+      <CatalogReference catalogName="VehicleCatalog" entryName="vehicle.tesla.model3_adversary">
+        <ParameterAssignments>
+          <ParameterAssignment parameterRef="color1" value="255"/>
+        </ParameterAssignments>
+      </CatalogReference>
+    </ScenarioObject>
+  </Entities>
+  <Storyboard>
+  
+    <!-- INITIAL CONDITIONS -->
+    <Init>
+      <Actions>
+      
+        <!-- ENVIRONMENT -->
+        <GlobalAction>
+          <EnvironmentAction>
+            <CatalogReference catalogName = "EnvironmentCatalog" entryName = "Environment1"/>
+          </EnvironmentAction>
+        </GlobalAction>
+        
+        <!-- EGO VEHICLE INITIALISATION -->
+        <Private entityRef="hero">
+          <PrivateAction>
+            <!-- WHERE -->
+            <TeleportAction>
+              <Position>
+                <RoadPosition roadId="4" s="48.58" t="2.75"/>
+<!--                <LanePosition roadId="4" laneId="-1" offset="1.0" s="48.58"/>-->
+              </Position>
+            </TeleportAction>
+          </PrivateAction>
+          <PrivateAction>
+          
+            <!-- CONTROLLER -->
+            <ControllerAction>
+              <AssignControllerAction>
+                <Controller name="HeroAgent">
+                  <Properties>
+                    <Property name="module" value="external_control"/>
+                  </Properties>
+                </Controller>
+              </AssignControllerAction>
+              <OverrideControllerValueAction>
+                <Throttle value="0" active="false"/>
+                <Brake value="0" active="false"/>
+                <Clutch value="0" active="false"/>
+                <ParkingBrake value="0" active="false"/>
+                <SteeringWheel value="0" active="false"/>
+                <Gear number="0" active="false"/>
+              </OverrideControllerValueAction>
+            </ControllerAction>
+          </PrivateAction>
+        </Private>
+        
+        <!-- ADVERSARY VEHICLE INITIALISATION -->
+        <Private entityRef="adversary">
+          <PrivateAction>
+            <TeleportAction>
+              <Position>
+                <RelativeRoadPosition entityRef="hero" ds="50" dt="-1.0"/>
+              </Position>
+            </TeleportAction>
+          </PrivateAction>
+        </Private>
+      </Actions>
+    </Init>
+    
+    <Story name="MyStory">
+      <Act name="Behavior">
+        <ManeuverGroup name="ManeuverSequence" maximumExecutionCount="1">
+          <!-- WHO -->
+          <Actors selectTriggeringEntities="false">
+            <EntityRef entityRef="adversary"/>
+          </Actors>
+          <!-- WHAT -->
+          <Maneuver name="FollowLeadingVehicleManeuver">
+            <Event name="LeadingVehicleKeepsVelocity" priority="overwrite">
+              <Action name="LeadingVehicleKeepsVelocity">
+                <PrivateAction>
+                  <LongitudinalAction>
+                  
+                    <!-- DRIVE FOR 40m -->
+                    <SpeedAction>
+                      <SpeedActionDynamics dynamicsShape="step" value="40" dynamicsDimension="distance"/>
+                      <SpeedActionTarget>
+                        <AbsoluteTargetSpeed value="$leadingSpeed"/>
+                      </SpeedActionTarget>
+                    </SpeedAction>
+                  </LongitudinalAction>
+                </PrivateAction>
+              </Action>
+              <StartTrigger>
+                <ConditionGroup>
+                  <Condition name="StartConditionLeadingVehicleKeepsVelocity" delay="0" conditionEdge="rising">
+                    <ByEntityCondition>
+                      <TriggeringEntities triggeringEntitiesRule="any">
+                        <EntityRef entityRef="hero"/>
+                      </TriggeringEntities>
+                      <EntityCondition>
+<!--                        <RelativeDistanceCondition entityRef="adversary" relativeDistanceType="cartesianDistance" value="40.0" freespace="false" rule="lessThan"/>-->
+                        <RelativeDistanceCondition entityRef="adversary" relativeDistanceType="longitudinal" value="40.0" freespace="true" rule="lessThan"/>
+                      </EntityCondition>
+                    </ByEntityCondition>
+                  </Condition>
+                </ConditionGroup>
+              </StartTrigger>
+            </Event>
+            <Event name="LeadingVehicleWaits" priority="overwrite">
+              <Action name="LeadingVehicleWaits">
+                <PrivateAction>
+                  <LongitudinalAction>
+                  
+                    <!-- Come to a stop and wait for 10 seconds -->
+                    <SpeedAction>
+                      <SpeedActionDynamics dynamicsShape="step" value="10" dynamicsDimension="time"/>
+                      <SpeedActionTarget>
+                        <AbsoluteTargetSpeed value="0.0"/>
+                      </SpeedActionTarget>
+                    </SpeedAction>
+                  </LongitudinalAction>
+                </PrivateAction>
+              </Action>
+              <StartTrigger>
+                <ConditionGroup>
+                  <Condition name="AfterLeadingVehicleKeepsVelocity" delay="0" conditionEdge="rising">
+                    <ByValueCondition>
+                      <StoryboardElementStateCondition storyboardElementType="action" storyboardElementRef="LeadingVehicleKeepsVelocity" state="endTransition"/>
+                    </ByValueCondition>
+                  </Condition>
+                </ConditionGroup>
+              </StartTrigger>
+            </Event>
+          </Maneuver>
+        </ManeuverGroup>
+        
+        <!-- SCENARIO START CONDITION -->
+        <StartTrigger>
+        
+          <!-- ALL CONDITIONS NEED TO BE TRUE TO START -->
+          <ConditionGroup>
+            <Condition name="OverallStartCondition" delay="0" conditionEdge="rising">
+              <ByEntityCondition>
+              
+                <!-- WHO -->
+                <TriggeringEntities triggeringEntitiesRule="any">
+                  <EntityRef entityRef="hero"/>
+                </TriggeringEntities>
+                <EntityCondition>
+                  <TraveledDistanceCondition value="1.0"/>
+                </EntityCondition>
+              </ByEntityCondition>
+            </Condition>
+            <Condition name="StartTime" delay="0" conditionEdge="rising">
+              <ByValueCondition>
+                <SimulationTimeCondition value="0" rule="equalTo"/>
+              </ByValueCondition>
+            </Condition>
+          </ConditionGroup>
+        </StartTrigger>
+        
+        <!-- SCENARIO STOP CONDITION -->
+        <StopTrigger>
+          <ConditionGroup>
+            <Condition name="EndCondition" delay="0" conditionEdge="rising">
+              <ByEntityCondition>
+                <TriggeringEntities triggeringEntitiesRule="any">
+                  <EntityRef entityRef="hero"/>
+                </TriggeringEntities>
+                <EntityCondition>
+                  <TraveledDistanceCondition value="200.0"/>
+                </EntityCondition>
+              </ByEntityCondition>
+            </Condition>
+          </ConditionGroup>
+        </StopTrigger>
+        
+      </Act>
+    </Story>
+    <StopTrigger>
+      <ConditionGroup>
+        <Condition name="criteria_DrivenDistanceTest" delay="0" conditionEdge="rising">
+          <ByValueCondition>
+            <ParameterCondition parameterRef="distance_success" value="1000" rule="lessThan"/>
+          </ByValueCondition>
+        </Condition>
+      </ConditionGroup>
+    </StopTrigger>
+  </Storyboard>
+</OpenSCENARIO>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSCENARIO>
+  <FileHeader revMajor="1" revMinor="0" date="2020-03-20T12:00:00" description="CARLA:FollowLeadingVehicle" author=""/>
+  <CatalogLocations>
+    <VehicleCatalog>
+      <Directory path="../catalogs/vehicles"/>
+    </VehicleCatalog>
+    <ManeuverCatalog>
+      <Directory path="../catalogs/maneuvers"/>
+    </ManeuverCatalog>
+    <EnvironmentCatalog>
+      <Directory path="../catalogs/environments"/>
+    </EnvironmentCatalog>
+  </CatalogLocations>
+  <RoadNetwork>
+    <LogicFile filepath="Town01"/>
+    <SceneGraphFile filepath=""/>
+  </RoadNetwork>
+  <Entities>
+    <ScenarioObject name="hero">
+      <CatalogReference catalogName="VehicleCatalog" entryName="vehicle.tesla.model3_ego">
+        <ParameterAssignments>
+          <ParameterAssignment parameterRef="color3" value="255"/>
+        </ParameterAssignments>
+      </CatalogReference>
+    </ScenarioObject>
+    
+    <ScenarioObject name="adversary">
+      <CatalogReference catalogName="VehicleCatalog" entryName="vehicle.tesla.model3_adversary">
+        <ParameterAssignments>
+          <ParameterAssignment parameterRef="color1" value="255"/>
+        </ParameterAssignments>
+      </CatalogReference>
+    </ScenarioObject>
+  </Entities>
+  <Storyboard>
+  
+    <!-- INITIAL CONDITIONS -->
+    <Init>
+      <Actions>
+      
+        <!-- ENVIRONMENT -->
+        <GlobalAction>
+          <EnvironmentAction>
+            <CatalogReference catalogName = "EnvironmentCatalog" entryName = "Environment1"/>
+          </EnvironmentAction>
+        </GlobalAction>
+        
+        <!-- EGO VEHICLE INITIALISATION -->
+        <Private entityRef="hero">
+          <PrivateAction>
+            <!-- WHERE -->
+            <TeleportAction>
+              <Position>
+                <RoadPosition roadId="4" s="48.58" t="2.75"/>
+<!--                <LanePosition roadId="4" laneId="-1" offset="1.0" s="48.58"/>-->
+              </Position>
+            </TeleportAction>
+          </PrivateAction>
+          <PrivateAction>
+          
+            <!-- CONTROLLER -->
+            <ControllerAction>
+              <AssignControllerAction>
+                <Controller name="HeroAgent">
+                  <Properties>
+                    <Property name="module" value="external_control"/>
+                  </Properties>
+                </Controller>
+              </AssignControllerAction>
+              <OverrideControllerValueAction>
+                <Throttle value="0" active="false"/>
+                <Brake value="0" active="false"/>
+                <Clutch value="0" active="false"/>
+                <ParkingBrake value="0" active="false"/>
+                <SteeringWheel value="0" active="false"/>
+                <Gear number="0" active="false"/>
+              </OverrideControllerValueAction>
+            </ControllerAction>
+          </PrivateAction>
+        </Private>
+        
+        <!-- ADVERSARY VEHICLE INITIALISATION -->
+        <Private entityRef="adversary">
+          <PrivateAction>
+            <TeleportAction>
+              <Position>
+                <RelativeRoadPosition entityRef="hero" ds="20" dt="0.0"/>
+              </Position>
+            </TeleportAction>
+          </PrivateAction>
+        </Private>
+      </Actions>
+    </Init>
+    
+    <Story name="MyStory">
+      <Act name="Behavior">
+        <ManeuverGroup name="ManeuverSequence" maximumExecutionCount="1">
+          <!-- WHO -->
+          <Actors selectTriggeringEntities="false">
+            <EntityRef entityRef="adversary"/>
+          </Actors>
+          <!-- WHAT -->
+          <CatalogReference catalogName="ManeuverCatalog" entryName="FollowLeadingVehicleManeuver">
+            <ParameterAssignments>
+              <ParameterAssignment parameterRef = "leadingSpeed" value = "100.0"/>
+            </ParameterAssignments>
+          </CatalogReference>
+          <CatalogReference catalogName="ManeuverCatalog" entryName="LeadingVehicleWaits">
+            <ParameterAssignments>
+              <ParameterAssignment parameterRef = "waitingTime" value = "10"/>
+			        <ParameterAssignment parameterRef = "$storyBoardElement" value="LeadingVehicleBrakes"/>
+            </ParameterAssignments>
+          </CatalogReference>
+        </ManeuverGroup>
+        
+        <!-- SCENARIO START CONDITION -->
+        <StartTrigger>
+        
+          <!-- ALL CONDITIONS NEED TO BE TRUE TO START -->
+          <ConditionGroup>
+            <Condition name="OverallStartCondition" delay="0" conditionEdge="rising">
+              <ByEntityCondition>
+              
+                <!-- WHO -->
+                <TriggeringEntities triggeringEntitiesRule="any">
+                  <EntityRef entityRef="hero"/>
+                </TriggeringEntities>
+                <EntityCondition>
+                  <TraveledDistanceCondition value="1.0"/>
+                </EntityCondition>
+              </ByEntityCondition>
+            </Condition>
+            <Condition name="StartTime" delay="0" conditionEdge="rising">
+              <ByValueCondition>
+                <SimulationTimeCondition value="0" rule="equalTo"/>
+              </ByValueCondition>
+            </Condition>
+          </ConditionGroup>
+        </StartTrigger>
+        
+        <!-- SCENARIO STOP CONDITION -->
+        <StopTrigger>
+          <ConditionGroup>
+            <Condition name="EndCondition" delay="0" conditionEdge="rising">
+              <ByEntityCondition>
+                <TriggeringEntities triggeringEntitiesRule="any">
+                  <EntityRef entityRef="hero"/>
+                </TriggeringEntities>
+                <EntityCondition>
+                  <TraveledDistanceCondition value="200.0"/>
+                </EntityCondition>
+              </ByEntityCondition>
+            </Condition>
+          </ConditionGroup>
+        </StopTrigger>
+        
+      </Act>
+    </Story>
+    <StopTrigger>
+      <ConditionGroup>
+        <Condition name="criteria_DrivenDistanceTest" delay="0" conditionEdge="rising">
+          <ByValueCondition>
+            <ParameterCondition parameterRef="distance_success" value="1000" rule="lessThan"/>
+          </ByValueCondition>
+        </Condition>
+      </ConditionGroup>
+    </StopTrigger>
+  </Storyboard>
+</OpenSCENARIO>

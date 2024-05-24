@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OpenSCENARIO xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OpenScenario.xsd">
+    <FileHeader description="adapt_speed_example" author="Mandolin" revMajor="1" revMinor="0" date="2023-09-13T16:29:26.262272"/>
+    <ParameterDeclarations>
+        <ParameterDeclaration name="roadid" parameterType="double" value="4"/>
+        <ParameterDeclaration name="xvalue" parameterType="double" value="101"/>
+        <ParameterDeclaration name="yvalue" parameterType="double" value="-133"/>
+        <ParameterDeclaration name="laneIdEgo" parameterType="double" value="-1"/>
+        <ParameterDeclaration name="offsetego" parameterType="double" value="150"/>
+        <ParameterDeclaration name="laneIdpedestrian6" parameterType="double" value="2"/>
+        <ParameterDeclaration name="offsetpedestrian6" parameterType="double" value="160"/>
+        <ParameterDeclaration name="xvaluepedestrian6" parameterType="double" value="200"/>
+        <ParameterDeclaration name="yvaluepedestrian6" parameterType="double" value="-127"/>
+        <ParameterDeclaration name="orientationpedestrian6" parameterType="double" value="-1.8"/>
+        <ParameterDeclaration name="startProximitypedestrian6" parameterType="double" value="15.0"/>
+    </ParameterDeclarations>
+    <CatalogLocations>
+        <VehicleCatalog>
+            <Directory path="../../scenarios/catalogs/vehicles"/>
+        </VehicleCatalog>
+        <EnvironmentCatalog>
+            <Directory path="../../scenarios/catalogs/environments"/>
+        </EnvironmentCatalog>
+        <MiscObjectCatalog>
+            <Directory path="../../scenarios/catalogs/objects"/>
+        </MiscObjectCatalog>
+    </CatalogLocations>
+    <RoadNetwork>
+        <LogicFile filepath="Town01"/>
+    </RoadNetwork>
+    <Entities>
+        <ScenarioObject name="hero">
+            <CatalogReference catalogName="VehicleCatalog" entryName="vehicle.tesla.model3_ego"/>
+        </ScenarioObject>
+        <ScenarioObject name="pedestrian6">
+            <CatalogReference catalogName="VehicleCatalog" entryName="vehicle.diamondback.century"/>
+        </ScenarioObject>
+    </Entities>
+    <Storyboard>
+        <Init>
+            <Actions>
+                <GlobalAction>
+                    <EnvironmentAction>
+                        <CatalogReference catalogName="EnvironmentCatalog" entryName="Environment1"/>
+                    </EnvironmentAction>
+                </GlobalAction>
+                <Private entityRef="hero">
+                    <PrivateAction>
+                        <TeleportAction>
+                            <Position>
+                                <WorldPosition x="$xvalue" y="$yvalue" z="0.0" h="0.0"/>
+                            </Position>
+                        </TeleportAction>
+                    </PrivateAction>
+                    <PrivateAction>
+                        <ControllerAction>
+                            <OverrideControllerValueAction>
+                                <Throttle active="false" value="0.0"/>
+                                <Brake active="false" value="0.0"/>
+                                <Clutch active="false" value="0.0"/>
+                                <ParkingBrake active="false" value="0.0"/>
+                                <SteeringWheel active="false" value="0.0"/>
+                                <Gear active="false" number="0.0"/>
+                            </OverrideControllerValueAction>
+                            <AssignControllerAction>
+                                <Controller name="HeroAgent">
+                                    <ParameterDeclarations/>
+                                    <Properties>
+                                        <Property name="module" value="external_control"/>
+                                    </Properties>
+                                </Controller>
+                            </AssignControllerAction>
+                        </ControllerAction>
+                    </PrivateAction>
+                </Private>
+                <Private entityRef="pedestrian6">
+                    <PrivateAction>
+                        <TeleportAction>
+                            <Position>
+                                <WorldPosition x="$xvaluepedestrian6" y="$yvaluepedestrian6" z="0.0" h="$orientationpedestrian6"/>
+                            </Position>
+                        </TeleportAction>
+                    </PrivateAction>
+                    <PrivateAction>
+                        <LongitudinalAction>
+                            <SpeedAction>
+                                <SpeedActionDynamics dynamicsShape="step" value="0.0" dynamicsDimension="time"/>
+                                <SpeedActionTarget>
+                                    <AbsoluteTargetSpeed value="0.0"/>
+                                </SpeedActionTarget>
+                            </SpeedAction>
+                        </LongitudinalAction>
+                    </PrivateAction>
+                    <PrivateAction>
+                        <ControllerAction>
+                            <OverrideControllerValueAction>
+                                <Throttle active="false" value="0.0"/>
+                                <Brake active="false" value="0.0"/>
+                                <Clutch active="false" value="0.0"/>
+                                <ParkingBrake active="false" value="0.0"/>
+                                <SteeringWheel active="false" value="0.0"/>
+                                <Gear active="false" number="0.0"/>
+                            </OverrideControllerValueAction>
+                            <AssignControllerAction>
+                                <Controller name="AdversaryAgent">
+                                    <ParameterDeclarations/>
+                                    <Properties>
+                                        <Property name="module" value="vehicle_longitudinal_control"/>
+                                    </Properties>
+                                </Controller>
+                            </AssignControllerAction>
+                        </ControllerAction>
+                    </PrivateAction>
+                </Private>
+            </Actions>
+        </Init>
+        <Story name="mystory">
+            <ParameterDeclarations/>
+            <Act name="myact">
+                <ManeuverGroup name="target_man_gr" maximumExecutionCount="1">
+                    <Actors selectTriggeringEntities="false">
+                        <EntityRef entityRef="pedestrian6"/>
+                    </Actors>
+                    <Maneuver name="target_man">
+                        <Event name="target_event" priority="overwrite" maximumExecutionCount="1">
+                            <Action name="tar_action">
+                                <PrivateAction>
+                                    <SynchronizeAction masterEntityRef="hero">
+                                        <TargetPositionMaster>
+                                            <LanePosition roadId="$roadid" laneId="$laneIdEgo" s="$offsetego" offset="0.0"/>
+                                        </TargetPositionMaster>
+                                        <TargetPosition>
+                                            <LanePosition roadId="$roadid" laneId="$laneIdpedestrian6" s="$offsetpedestrian6" offset="0.0"/>
+                                        </TargetPosition>
+                                        <FinalSpeed>
+                                            <AbsoluteSpeed value="10"/>
+                                        </FinalSpeed>
+                                    </SynchronizeAction>
+                                </PrivateAction>
+                            </Action>
+                            <StartTrigger>
+                                <ConditionGroup>
+                                    <Condition name="ego_start" delay="0.0" conditionEdge="rising">
+                                        <ByEntityCondition>
+                                            <TriggeringEntities triggeringEntitiesRule="any">
+                                                <EntityRef entityRef="hero"/>
+                                            </TriggeringEntities>
+                                            <EntityCondition>
+                                                <RelativeDistanceCondition value="$startProximitypedestrian6" freespace="true" entityRef="pedestrian6" rule="lessThan" relativeDistanceType="longitudinal"/>
+                                            </EntityCondition>
+                                        </ByEntityCondition>
+                                    </Condition>
+                                </ConditionGroup>
+                            </StartTrigger>
+                        </Event>
+                        <Event name="lane_change_event" priority="overwrite" maximumExecutionCount="1">
+                            <Action name="lane_change_action">
+                                <PrivateAction>
+                                    <LateralAction>
+                                        <LaneChangeAction>
+                                            <LaneChangeActionDynamics dynamicsShape="linear" value="5.0" dynamicsDimension="distance"/>
+                                            <LaneChangeTarget>
+                                                <RelativeTargetLane value="-3" entityRef="pedestrian6"/>
+                                            </LaneChangeTarget>
+                                        </LaneChangeAction>
+                                    </LateralAction>
+                                </PrivateAction>
+                            </Action>
+                            <StartTrigger>
+                                <ConditionGroup>
+                                    <Condition name="AfterSynchronization" delay="0.0" conditionEdge="rising">
+                                        <ByValueCondition>
+                                            <StoryboardElementStateCondition storyboardElementType="action" storyboardElementRef="tar_action" state="endTransition"/>
+                                        </ByValueCondition>
+                                    </Condition>
+                                </ConditionGroup>
+                            </StartTrigger>
+                        </Event>
+                        <Event name="stop_event" priority="overwrite" maximumExecutionCount="1">
+                            <Action name="stop_event">
+                                <PrivateAction>
+                                    <LongitudinalAction>
+                                        <SpeedAction>
+                                            <SpeedActionDynamics dynamicsShape="step" value="10.0" dynamicsDimension="time"/>
+                                            <SpeedActionTarget>
+                                                <AbsoluteTargetSpeed value="0.0"/>
+                                            </SpeedActionTarget>
+                                        </SpeedAction>
+                                    </LongitudinalAction>
+                                </PrivateAction>
+                            </Action>
+                            <StartTrigger>
+                                <ConditionGroup>
+                                    <Condition name="AfterSynchronization" delay="0.0" conditionEdge="rising">
+                                        <ByValueCondition>
+                                            <StoryboardElementStateCondition storyboardElementType="action" storyboardElementRef="lane_change_action" state="endTransition"/>
+                                        </ByValueCondition>
+                                    </Condition>
+                                </ConditionGroup>
+                            </StartTrigger>
+                        </Event>
+                    </Maneuver>
+                </ManeuverGroup>
+                <StartTrigger>
+                    <ConditionGroup>
+                        <Condition name="start" delay="0.0" conditionEdge="none">
+                            <ByValueCondition>
+                                <SimulationTimeCondition value="0.0" rule="greaterThan"/>
+                            </ByValueCondition>
+                        </Condition>
+                    </ConditionGroup>
+                </StartTrigger>
+                <StopTrigger/>
+            </Act>
+        </Story>
+        <StopTrigger>
+            <ConditionGroup>
+                <Condition name="stop_simulation" delay="0.0" conditionEdge="rising">
+                    <ByValueCondition>
+                        <SimulationTimeCondition value="100.0" rule="greaterThan"/>
+                    </ByValueCondition>
+                </Condition>
+            </ConditionGroup>
+        </StopTrigger>
+    </Storyboard>
+</OpenSCENARIO>

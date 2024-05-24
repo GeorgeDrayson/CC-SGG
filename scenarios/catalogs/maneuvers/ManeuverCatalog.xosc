@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSCENARIO>
+  <FileHeader revMajor="1" revMinor="0" date="2020-02-21T10:00:00" description="Vehicle Catalog" author="George"/>
+	<Catalog name="ManeuverCatalog">
+
+	  <Maneuver name="FollowLeadingVehicleManeuver">
+
+		<ParameterDeclarations>
+			<ParameterDeclaration name = "$leadingSpeed" parameterType="double" value = "10.0"/>
+			<ParameterDeclaration name = "$startOffset" parameterType="double" value = "100.0"/>
+		</ParameterDeclarations>
+
+		<Event name="LeadingVehicleKeepsVelocity" priority="overwrite">
+			<Action name="LeadingVehicleKeepsVelocity">
+				<PrivateAction>
+					<LongitudinalAction>
+					
+					<!-- DRIVE FOR 40m from t=0 -->
+					<SpeedAction>
+						<SpeedActionDynamics dynamicsShape="step" value="40" dynamicsDimension="distance"/>
+						<SpeedActionTarget>
+							<AbsoluteTargetSpeed value="$leadingSpeed"/>
+						</SpeedActionTarget>
+					</SpeedAction>
+					</LongitudinalAction>
+				</PrivateAction>
+			</Action>
+			<StartTrigger>
+                <ConditionGroup>
+                  <Condition name="StartConditionLeadingVehicleKeepsVelocity" delay="0" conditionEdge="rising">
+                    <ByEntityCondition>
+                      <TriggeringEntities triggeringEntitiesRule="any">
+                        <EntityRef entityRef="hero"/>
+                      </TriggeringEntities>
+                      <EntityCondition>
+                        <RelativeDistanceCondition entityRef="adversary" relativeDistanceType="longitudinal" value="$startOffset" freespace="true" rule="lessThan"/>
+                      </EntityCondition>
+                    </ByEntityCondition>
+                  </Condition>
+                </ConditionGroup>
+			</StartTrigger>
+		</Event>
+		<Event name="LeadingVehicleBrakes" priority="overwrite">
+			<Action name="LeadingVehicleBrakes">
+				<PrivateAction>
+					<LongitudinalAction>
+					
+					<!-- Come to a stop for 5 seconds -->
+					<SpeedAction>
+						<SpeedActionDynamics dynamicsShape="step" value="5" dynamicsDimension="time"/>
+						<SpeedActionTarget>
+						<AbsoluteTargetSpeed value="0.0"/>
+						</SpeedActionTarget>
+					</SpeedAction>
+					</LongitudinalAction>
+				</PrivateAction>
+			</Action>
+			<StartTrigger>
+				<ConditionGroup>
+					<Condition name="AfterLeadingVehicleKeepsVelocity" delay="0" conditionEdge="rising">
+					<ByValueCondition>
+						<StoryboardElementStateCondition storyboardElementType="action" storyboardElementRef="LeadingVehicleKeepsVelocity" state="endTransition"/>
+					</ByValueCondition>
+					</Condition>
+				</ConditionGroup>
+			</StartTrigger>
+		</Event>
+	  </Maneuver>
+
+	  <Maneuver name="ProximityDrive">
+
+		<ParameterDeclarations>
+			<ParameterDeclaration name = "$drivingTime" parameterType="double" value = "20.0"/>
+			<ParameterDeclaration name = "$leadingSpeed" parameterType="double" value = "10.0"/>
+			<ParameterDeclaration name = "$proximity" parameterType="double" value = "3.0"/>
+		</ParameterDeclarations>
+
+		<Event name="LeadingVehicleDrivesStraight" priority="overwrite">
+			<Action name="LeadingVehicleDrivesStraight">
+				<PrivateAction>
+					<LongitudinalAction>
+					
+					<!-- DRIVE FOR 40m from t=0 -->
+					<SpeedAction>
+						<SpeedActionDynamics dynamicsShape="step" value="$drivingTime" dynamicsDimension="time"/>
+						<SpeedActionTarget>
+							<AbsoluteTargetSpeed value="$leadingSpeed"/>
+						</SpeedActionTarget>
+					</SpeedAction>
+					</LongitudinalAction>
+				</PrivateAction>
+			</Action>
+			<StartTrigger>
+                <ConditionGroup>
+                  <Condition name="StartConditionLeadingVehicleKeepsVelocity" delay="0" conditionEdge="rising">
+                    <ByEntityCondition>
+                      <TriggeringEntities triggeringEntitiesRule="any">
+                        <EntityRef entityRef="hero"/>
+                      </TriggeringEntities>
+                      <EntityCondition>
+                        <RelativeDistanceCondition entityRef="adversary" relativeDistanceType="longitudinal" value="$proximity" freespace="true" rule="lessThan"/>
+                      </EntityCondition>
+                    </ByEntityCondition>
+                  </Condition>
+                </ConditionGroup>
+			</StartTrigger>
+		</Event>
+	  </Maneuver>
+
+	  <Maneuver name="Drive">
+
+		<ParameterDeclarations>
+			<ParameterDeclaration name = "$drivingTime" parameterType="double" value = "20.0"/>
+			<ParameterDeclaration name = "$leadingSpeed" parameterType="double" value = "10.0"/>
+		</ParameterDeclarations>
+
+		<Event name="LeadingVehicleDrives" priority="overwrite">
+			<Action name="LeadingVehicleDrives">
+				<PrivateAction>
+					<LongitudinalAction>
+					
+					<!-- DRIVE FOR 40m from t=0 -->
+					<SpeedAction>
+						<SpeedActionDynamics dynamicsShape="step" value="$drivingTime" dynamicsDimension="time"/>
+						<SpeedActionTarget>
+							<AbsoluteTargetSpeed value="$leadingSpeed"/>
+						</SpeedActionTarget>
+					</SpeedAction>
+					</LongitudinalAction>
+				</PrivateAction>
+			</Action>
+			<StartTrigger>
+                <ConditionGroup>
+                  <Condition name="StartConditionLeadingVehicleKeepsVelocity" delay="0" conditionEdge="rising">
+                    <ByValueCondition>
+                		<SimulationTimeCondition value="0" rule="greaterThan"/>
+              		</ByValueCondition>
+                  </Condition>
+                </ConditionGroup>
+			</StartTrigger>
+		</Event>
+	  </Maneuver>
+
+
+	  <Maneuver name="LeadingVehicleDrivesThenBrakes">
+
+	  	<ParameterDeclarations>
+			<ParameterDeclaration name = "$drivingDistance" parameterType="double" value = "60.0"/>
+			<ParameterDeclaration name = "$leadingSpeed" parameterType="double" value = "10.0"/>
+		</ParameterDeclarations>
+            <Event name="LeadingVehicleKeepsVelocity" priority="overwrite">
+              <Action name="LeadingVehicleKeepsVelocity">
+                <PrivateAction>
+                  <LongitudinalAction>
+                  
+                    <!-- DRIVE FOR 40m -->
+                    <SpeedAction>
+                      <SpeedActionDynamics dynamicsShape="step" value="$drivingDistance" dynamicsDimension="distance"/>
+                      <SpeedActionTarget>
+                        <AbsoluteTargetSpeed value="$leadingSpeed"/>
+                      </SpeedActionTarget>
+                    </SpeedAction>
+                  </LongitudinalAction>
+                </PrivateAction>
+              </Action>
+              <StartTrigger>
+                <ConditionGroup>
+                  <Condition name="AccelerateStartCondition"
+                            delay="0"
+                            conditionEdge="none">
+                    <ByValueCondition>
+                      <SimulationTimeCondition value="0"
+                                              rule="greaterThan"/>
+                    </ByValueCondition>
+                  </Condition>
+                </ConditionGroup>
+              </StartTrigger>
+            </Event>
+            <Event name="LeadingVehicleBrakes" priority="overwrite">
+              <Action name="LeadingVehicleBrakes">
+                <PrivateAction>
+                  <LongitudinalAction>
+                  
+                    <!-- Come to a stop and wait for 10 seconds -->
+                    <SpeedAction>
+                      <SpeedActionDynamics dynamicsShape="linear" value="-6" dynamicsDimension="rate"/>
+                      <SpeedActionTarget>
+                        <AbsoluteTargetSpeed value="0"/>
+                      </SpeedActionTarget>
+                    </SpeedAction>
+                  </LongitudinalAction>
+                </PrivateAction>
+              </Action>
+              <StartTrigger>
+                <ConditionGroup>
+                  <Condition name="AfterLeadingVehicleKeepsVelocity" delay="0" conditionEdge="rising">
+                    <ByValueCondition>
+                      <StoryboardElementStateCondition storyboardElementType="action" storyboardElementRef="LeadingVehicleKeepsVelocity" state="endTransition"/>
+                    </ByValueCondition>
+                  </Condition>
+                </ConditionGroup>
+              </StartTrigger>
+            </Event>
+            <Event name="LeadingVehicleWaits" priority="overwrite">
+              <Action name="LeadingVehicleWaits">
+                <PrivateAction>
+                  <LongitudinalAction>
+                  
+                    <!-- Come to a stop and wait for 10 seconds -->
+                    <SpeedAction>
+                      <SpeedActionDynamics dynamicsShape="step" value="10" dynamicsDimension="time"/>
+                      <SpeedActionTarget>
+                        <AbsoluteTargetSpeed value="0.0"/>
+                      </SpeedActionTarget>
+                    </SpeedAction>
+                  </LongitudinalAction>
+                </PrivateAction>
+              </Action>
+              <StartTrigger>
+                <ConditionGroup>
+                  <Condition name="AfterLeadingVehicleBrakes" delay="0" conditionEdge="rising">
+                    <ByValueCondition>
+                      <StoryboardElementStateCondition storyboardElementType="action" storyboardElementRef="LeadingVehicleBrakes" state="endTransition"/>
+                    </ByValueCondition>
+                  </Condition>
+                </ConditionGroup>
+              </StartTrigger>
+            </Event>
+          </Maneuver>
+
+	</Catalog>
+</OpenSCENARIO>

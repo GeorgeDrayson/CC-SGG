@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSCENARIO>
+  <FileHeader revMajor="1" revMinor="0" date="2020-03-20T12:00:00" description="CARLA:FollowLeadingVehicle" author=""/>
+  <ParameterDeclarations>
+    <!-- Environment -->
+    <ParameterDeclaration name="environment" parameterType="string" value="Environment1"/>
+
+    <!-- Start position of ego vehicle -->
+    <ParameterDeclaration name="ego_road" parameterType="integer" value="6"/>
+    <ParameterDeclaration name="ego_lane" parameterType="integer" value="-1"/>
+    <ParameterDeclaration name="ego_longitudinalDistance" parameterType="double" value="210.0"/>
+    <ParameterDeclaration name="ego_offset" parameterType="double" value="0.0"/>
+
+    <!-- Start position of adversary -->
+    <ParameterDeclaration name="adv_road" parameterType="integer" value="19"/>
+    <ParameterDeclaration name="adv_lane" parameterType="integer" value="1"/>
+    <ParameterDeclaration name="adv_longitudinalDistance" parameterType="double" value="105.0"/>
+    <ParameterDeclaration name="adv_offset" parameterType="double" value="0.0"/>
+
+
+    <!-- Maneuver Definitions -->
+    <ParameterDeclaration name="maneuverName" parameterType="string" value="ProximityDrive"/>   
+    <ParameterDeclaration name="proximity" parameterType="double" value="5.0"/>
+    <ParameterDeclaration name="leadingSpeed" parameterType="double" value="20.0"/>
+    <ParameterDeclaration name="drivingTime" parameterType="double" value="4.0"/>
+  </ParameterDeclarations>
+
+  <!-- Catalogs -->
+  <CatalogLocations>
+    <VehicleCatalog>
+      <Directory path="../catalogs/vehicles"/>
+    </VehicleCatalog>
+    <EnvironmentCatalog>
+      <Directory path="../catalogs/environments"/>
+    </EnvironmentCatalog>
+    <ManeuverCatalog>
+      <Directory path="../catalogs/maneuvers"/>
+    </ManeuverCatalog>
+  </CatalogLocations>
+
+  <!-- TOWN NAME -->
+  <RoadNetwork>
+    <LogicFile filepath="Town01"/>
+    <SceneGraphFile filepath=""/>
+  </RoadNetwork>
+
+  <!-- VEHICLES -->
+  <Entities>
+    <ScenarioObject name="hero">
+      <CatalogReference catalogName="VehicleCatalog" entryName="vehicle.tesla.model3_ego">
+        <ParameterAssignments>
+          <ParameterAssignment parameterRef="color3" value="255"/>
+        </ParameterAssignments>
+      </CatalogReference>
+    </ScenarioObject>
+    
+    <ScenarioObject name="adversary">
+      <CatalogReference catalogName="VehicleCatalog" entryName="vehicle.tesla.model3_adversary">
+        <ParameterAssignments>
+          <ParameterAssignment parameterRef="color1" value="255"/>
+        </ParameterAssignments>
+      </CatalogReference>
+    </ScenarioObject>
+  </Entities>
+  <Storyboard>
+  
+    <!-- INITIAL CONDITIONS -->
+    <Init>
+      <Actions>
+      
+        <!-- ENVIRONMENT -->
+        <GlobalAction>
+          <EnvironmentAction>
+            <CatalogReference catalogName = "EnvironmentCatalog" entryName = "$environment"/>
+          </EnvironmentAction>
+        </GlobalAction>
+        
+        <!-- EGO VEHICLE INITIALISATION -->
+        <Private entityRef="hero">
+          <PrivateAction>
+            <!-- WHERE -->
+            <TeleportAction>
+              <Position>
+             <!--   <RoadPosition roadId="$road" s="$longitudinalDistance" t="$lateralOffset"/> --> 
+                <LanePosition roadId="$ego_road" laneId="$ego_lane" s="$ego_longitudinalDistance" offset="$ego_offset"/>
+              </Position>
+            </TeleportAction>
+          </PrivateAction>
+          <PrivateAction>
+          
+            <!-- CONTROLLER -->
+            <ControllerAction>
+              <AssignControllerAction>
+                <Controller name="HeroAgent">
+                  <Properties>
+                    <Property name="module" value="external_control"/>
+                  </Properties>
+                </Controller>
+              </AssignControllerAction>
+              <OverrideControllerValueAction>
+                <Throttle value="0" active="false"/>
+                <Brake value="0" active="false"/>
+                <Clutch value="0" active="false"/>
+                <ParkingBrake value="0" active="false"/>
+                <SteeringWheel value="0" active="false"/>
+                <Gear number="0" active="false"/>
+              </OverrideControllerValueAction>
+            </ControllerAction>
+          </PrivateAction>
+        </Private>
+        
+        <!-- ADVERSARY VEHICLE INITIALISATION -->
+        <Private entityRef="adversary">
+          <PrivateAction>
+            <!-- WHERE -->
+            <TeleportAction>
+              <Position>
+             <!--   <RoadPosition roadId="$road" s="$longitudinalDistance" t="$lateralOffset"/> --> 
+                <LanePosition roadId="$adv_road" laneId="$adv_lane" s="$adv_longitudinalDistance" offset="$adv_offset"/>
+              </Position>
+            </TeleportAction>
+          </PrivateAction>
+        </Private>
+      </Actions>
+    </Init>
+
+    <Story name="MyStory">
+      <Act name="AdversaryStartsDriving">
+        <ManeuverGroup name="ManeuverSequence" maximumExecutionCount="1">
+          <!-- WHO -->
+          <Actors selectTriggeringEntities="false">
+            <EntityRef entityRef="adversary"/>
+          </Actors>
+          <CatalogReference catalogName="ManeuverCatalog" entryName="$maneuverName">
+            <ParameterAssignments>
+              <ParameterAssignment parameterRef = "leadingSpeed" value = "$leadingSpeed"/>
+              <ParameterAssignment parameterRef = "proximity" value = "$proximity"/>
+              <ParameterAssignment parameterRef = "drivingTime" value = "$drivingTime"/>
+            </ParameterAssignments>
+          </CatalogReference>
+        </ManeuverGroup>
+        
+        <!-- SCENARIO START CONDITION -->
+        <StartTrigger>
+          <ConditionGroup>
+            <Condition name="" delay="0" conditionEdge="rising">
+              <ByValueCondition>
+                <SimulationTimeCondition value="0" rule="greaterThan"/>
+              </ByValueCondition>
+            </Condition>
+          </ConditionGroup>
+        </StartTrigger>
+      </Act>
+    </Story>
+    <StopTrigger/>
+  </Storyboard>
+</OpenSCENARIO>

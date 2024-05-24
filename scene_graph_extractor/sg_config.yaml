@@ -1,0 +1,45 @@
+---
+location_data:
+    input_path: "../semantics_extractor/semantic_files"
+    save_path: 'scene_graph_files'
+
+node_extraction_settings:
+  NODE_CATEGORIES: ['road','lane', 'pavement', 'shoulder', 'ego_car', 'car','bicycle','pedestrian','object','light','sign']
+  NODE_COLOURS: {'road': 'white', 'lane': 'yellow', 'pavement': 'yellow', 'shoulder': 'yellow', 'ego_car': 'red', 'car': 'green', 'bicycle': 'blue', 'pedestrian': 'blue', 'object': 'white', 'light': 'gray', 'sign': 'white'}
+
+edge_extraction_settings:
+  EDGE_CATEGORIES: ['velocity','location','isIn', 'relativePosition', 'safeDistance','braking','trafficLightState']
+  EDGE_COLOURS: {'velocity': 'blue', 'location': 'orange', 'isIn': 'black', 'safeDistance': 'green', 'relativePosition': 'violet', 'braking': 'blue', 'trafficLightState': 'blue'}
+
+  velocity:
+    node_categories: ['ego_car','car','pedestrian','bicycle']
+
+  location:
+    node_categories: ['ego_car','car','pedestrian','bicycle']
+
+  isIn:
+    relation_pairs: {'road': [], 'lane': ['road'], 'pavement': ['road'], 'shoulder': ['road'], 'ego_car': ['lane', 'pavement', 'shoulder'], 'car': ['lane', 'pavement', 'shoulder'], 'bicycle': ['lane', 'pavement', 'shoulder'], 'pedestrian': ['lane', 'pavement', 'shoulder'], 'object': ['lane', 'pavement', 'shoulder'], 'light': ['lane', 'pavement', 'shoulder'], 'sign': ['lane', 'pavement', 'shoulder']}
+    binary_relations: { 'isIn': [1,0]}
+
+  relativePosition:
+    relation_pairs: {'road':[],'lane':[],'pavement':[], 'shoulder':[], 'ego_car':[], 'car': ['ego_car'], 'bicycle': ['ego_car'], 'pedestrian': ['ego_car'], 'object': ['ego_car'], 'light': ['ego_car'], 'sign': ['ego_car'] }
+    relation_thresholds: [ ['inFrontOf',[[0,45],[315,360]]], ['toLeftOf',[[271,314]]], ['toRightOf',[[46,90]]], ['atRearOf',[[91,180],[180,270]]]] #compass directions of another vehicle from ego vehicle
+    binary_relations: {'inFrontOf':[0, 0], 'toLeftOf':[1, 0], 'toRightOf': [0, 1], 'atRearOf': [1, 1]}
+    
+  safeDistance:
+    relation_pairs: {'road':[],'lane':[],'pavement':[], 'shoulder':[], 'ego_car':['car','bicycle','pedestrian','object','light','sign'], 'car': ['ego_car'], 'bicycle': ['ego_car'], 'pedestrian': ['ego_car'], 'object': ['ego_car'], 'light': ['ego_car'], 'sign': ['ego_car'] }
+    binary_relations: {'safeDistance': [1,0], 'unsafeDistance': [0,0]}
+
+  braking:
+    node_categories: ['ego_car','car']
+    binary_relations: {'Braking': [1,0], 'notBraking': [0,0]}
+
+  trafficLightState:
+    node_categories: ['light']
+    binary_relations: {'isGreen': [0, 0], 'isYellow': [0, 1], 'isRed': [1, 0]}
+
+  BICYCLE_NAMES: ["bicycle","Gazelle", "Diamondback", "Bh"]
+  CAR_NAMES: ["car","TRUCK","BUS","Ford", "Bmw", "Toyota", "Nissan", "Mini", "Tesla", "Seat", "Lincoln", "Audi", "Carlamotors", "Citroen", "Mercedes-Benz", "Chevrolet", "Volkswagen", "Jeep", "Nissan", "Dodge", "Mustang"]
+  SIGN_NAMES: ["sign"]
+  OBJECT_NAMES: ["Prop Streetbarrier"]
+  LIGHT_NAMES: ["light"]

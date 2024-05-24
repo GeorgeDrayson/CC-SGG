@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSCENARIO>
+  <FileHeader revMajor="1" revMinor="0" date="2020-03-20T12:00:00" description="CARLA:FollowLeadingVehicle" author=""/>
+  <ParameterDeclarations>
+    <!-- Environment -->
+    <ParameterDeclaration name="environment" parameterType="string" value="Environment1"/>
+
+    <!-- Start position of ego vehicle -->
+    <ParameterDeclaration name="road" parameterType="integer" value="4"/>
+    <ParameterDeclaration name="lane" parameterType="integer" value="-1"/>
+    <ParameterDeclaration name="longitudinalDistance" parameterType="double" value="0.0"/>
+    <ParameterDeclaration name="offset" parameterType="double" value="0.0"/>
+
+    <!-- Start position of adversary -->
+    <ParameterDeclaration name="advLongitudinalDistance" parameterType="double" value="100.0"/>
+    <ParameterDeclaration name="advOffset" parameterType="double" value="0.0"/>
+    
+    <ParameterDeclaration name="advLongitudinalDistance" parameterType="double" value="100.0"/>
+    <ParameterDeclaration name="lateralOffset" parameterType="double" value="0.0"/>
+
+    <!-- Maneuver Definitions -->
+    <ParameterDeclaration name="maneuverName" parameterType="string" value="Drive"/>   
+    <ParameterDeclaration name="leadingSpeed" parameterType="double" value="0.0"/>
+    <ParameterDeclaration name="drivingTime" parameterType="double" value="30.0"/>
+  </ParameterDeclarations>
+
+  <!-- Catalogs -->
+  <CatalogLocations>
+    <VehicleCatalog>
+      <Directory path="catalogs/vehicles"/>
+    </VehicleCatalog>
+    <EnvironmentCatalog>
+      <Directory path="catalogs/environments"/>
+    </EnvironmentCatalog>
+    <ManeuverCatalog>
+      <Directory path="catalogs/maneuvers"/>
+    </ManeuverCatalog>
+    <MiscObjectCatalog>
+      <Directory path="catalogs/objects"/>
+    </MiscObjectCatalog>
+  </CatalogLocations>
+
+  <!-- TOWN NAME -->
+  <RoadNetwork>
+    <LogicFile filepath="Town04"/>
+    <SceneGraphFile filepath=""/>
+  </RoadNetwork>
+
+  <!-- VEHICLES -->
+  <Entities>
+    <ScenarioObject name="hero">
+      <CatalogReference catalogName="VehicleCatalog" entryName="vehicle.tesla.model3_ego">
+        <ParameterAssignments>
+          <ParameterAssignment parameterRef="color3" value="255"/>
+        </ParameterAssignments>
+      </CatalogReference>
+    </ScenarioObject>
+    
+    <ScenarioObject name="adversary">
+      <CatalogReference catalogName="VehicleCatalog" entryName="vehicle.tesla.model3_adversary">
+        <ParameterAssignments>
+          <ParameterAssignment parameterRef="color1" value="255"/>
+        </ParameterAssignments>
+      </CatalogReference>
+    </ScenarioObject>
+  </Entities>
+  <Storyboard>
+  
+    <!-- INITIAL CONDITIONS -->
+    <Init>
+      <Actions>
+      
+        <!-- ENVIRONMENT -->
+        <GlobalAction>
+          <EnvironmentAction>
+            <CatalogReference catalogName = "EnvironmentCatalog" entryName = "$environment"/>
+          </EnvironmentAction>
+        </GlobalAction>
+        
+        <!-- EGO VEHICLE INITIALISATION -->
+        <Private entityRef="hero">
+          <PrivateAction>
+            <!-- WHERE -->
+            <TeleportAction>
+              <Position>
+             <!--   <RoadPosition roadId="$road" s="$longitudinalDistance" t="$lateralOffset"/> --> 
+                <WorldPosition x="330" y="-169" z="0.5" h="0"/>
+              </Position>
+            </TeleportAction>
+          </PrivateAction>
+          <PrivateAction>
+          
+            <!-- CONTROLLER -->
+            <ControllerAction>
+              <AssignControllerAction>
+                <Controller name="HeroAgent">
+                  <Properties>
+                    <Property name="module" value="external_control"/>
+                  </Properties>
+                </Controller>
+              </AssignControllerAction>
+              <OverrideControllerValueAction>
+                <Throttle value="0" active="false"/>
+                <Brake value="0" active="false"/>
+                <Clutch value="0" active="false"/>
+                <ParkingBrake value="0" active="false"/>
+                <SteeringWheel value="0" active="false"/>
+                <Gear number="0" active="false"/>
+              </OverrideControllerValueAction>
+            </ControllerAction>
+          </PrivateAction>
+        </Private>
+        
+        <!-- ADVERSARY VEHICLE INITIALISATION -->
+        <Private entityRef="adversary">
+          <PrivateAction>
+            <TeleportAction>
+              <Position>
+                <WorldPosition x="385.4" y="-200.7" z="0.5" h="1.67"/>    
+              </Position>
+            </TeleportAction>
+          </PrivateAction>
+          <PrivateAction>
+            <LongitudinalAction>
+              <SpeedAction>
+                <SpeedActionDynamics dynamicsShape="step" value="0" dynamicsDimension="time"/>
+                <SpeedActionTarget>
+                  <AbsoluteTargetSpeed value="5"/>
+                </SpeedActionTarget>
+              </SpeedAction>
+            </LongitudinalAction>
+          </PrivateAction>
+        </Private>
+      </Actions>
+    </Init>
+
+    <Story name="MyStory">
+      <Act name="Behavior">
+        <ManeuverGroup maximumExecutionCount="1" name="ManeuverSequence">
+          <Actors selectTriggeringEntities="false">
+            <EntityRef entityRef="adversary"/>
+          </Actors>
+          <Maneuver name="SynchronizeManeuver">
+            <Event name="RouteCreation" priority="overwrite">
+              <Action name="RouteCreation">
+                <PrivateAction>
+                  <RoutingAction>
+                    <AcquirePositionAction>
+                      <Position>
+                        <WorldPosition x="385.4" y="-50.4" z="0" h="1.67"/>
+                      </Position>
+                    </AcquirePositionAction>
+                  </RoutingAction>
+                </PrivateAction>
+              </Action>
+              <StartTrigger>
+                <ConditionGroup>
+                  <Condition name="StartCondition" delay="0" conditionEdge="rising">
+                    <ByValueCondition>
+                      <SimulationTimeCondition value="0.1" rule="greaterThan"/>
+                    </ByValueCondition>
+                  </Condition>
+                </ConditionGroup>
+              </StartTrigger>
+            </Event>
+            <Event name="ActorSynchronization" priority="overwrite">
+              <Action name="ActorSynchronization">
+                <PrivateAction>
+                  <SynchronizeAction masterEntityRef="hero">
+                    <TargetPositionMaster>
+                      <WorldPosition x="395.8" y="-87" z="0.5" h="1.67"/>
+                    </TargetPositionMaster>
+                    <TargetPosition>
+                      <WorldPosition x="385.4" y="-77" z="0.5" h="1.67"/>
+                    </TargetPosition>
+                    <FinalSpeed>
+                      <RelativeSpeedToMaster value='3' speedTargetValueType='delta'/>
+                    </FinalSpeed>
+                  </SynchronizeAction>
+                </PrivateAction>
+              </Action>
+              <StartTrigger>
+                <ConditionGroup>
+                  <Condition name="StartCondition" delay="0" conditionEdge="rising">
+                    <ByValueCondition>
+                      <SimulationTimeCondition value="0.1" rule="greaterThan"/>
+                    </ByValueCondition>
+                  </Condition>
+                </ConditionGroup>
+              </StartTrigger>
+            </Event>
+          </Maneuver>
+        </ManeuverGroup>
+        <StartTrigger>
+          <ConditionGroup>
+            <Condition name="OverallStartCondition" delay="0" conditionEdge="rising">
+              <ByEntityCondition>
+                <TriggeringEntities triggeringEntitiesRule="any">
+                  <EntityRef entityRef="hero"/>
+                </TriggeringEntities>
+                <EntityCondition>
+                  <TraveledDistanceCondition value="0.1"/>
+                </EntityCondition>
+              </ByEntityCondition>
+            </Condition>
+          </ConditionGroup>
+        </StartTrigger>
+        <StopTrigger>
+          <ConditionGroup>
+            <Condition name="EndCondition" delay="0" conditionEdge="rising">
+              <ByEntityCondition>
+                <TriggeringEntities triggeringEntitiesRule="any">
+                  <EntityRef entityRef="hero"/>
+                </TriggeringEntities>
+                <EntityCondition>
+                  <TraveledDistanceCondition value="200.0"/>
+                </EntityCondition>
+              </ByEntityCondition>
+            </Condition>
+          </ConditionGroup>
+        </StopTrigger>
+      </Act>
+    </Story>
+    <StopTrigger>
+      <ConditionGroup>
+        <Condition name="criteria_DrivenDistanceTest" delay="0" conditionEdge="rising">
+          <ByValueCondition>
+            <ParameterCondition parameterRef="distance_success" value="1000" rule="lessThan"/>
+          </ByValueCondition>
+        </Condition>
+      </ConditionGroup>
+    </StopTrigger>
+  </Storyboard>
+</OpenSCENARIO>
